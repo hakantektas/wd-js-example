@@ -8,7 +8,7 @@ var DATA = {
         "momentum.path": "/gateway/wd/hub/",
         "momentum.protocol": "https",
         "momentum.deviceList": [4033] //Comma seperated device list for parallel-test run
-        },
+        }
     };
     
     

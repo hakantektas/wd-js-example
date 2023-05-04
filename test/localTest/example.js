@@ -20,9 +20,8 @@ describe("sample test", function () {
         let desired = {
             platformName: 'Android',
             deviceName: '988d9145524846413130',
-            app:"/Users/hakantektas/Downloads/sample (3).apk",
+            app:"/Users/hakantektas/Desktop/wd-js-example/wd-js-example/app/sample.apk",
             fullReset: false,
-            fastReset: false,
             noReset: true
         };
         return driver
