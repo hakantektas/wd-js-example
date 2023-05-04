@@ -68,4 +68,17 @@ describe("sample test", function () {
     });  
 ```
 
-  
+## Test rapor arayüzü entegre etmek
+```bash
+  npm instal mocha-allure-reporter       
+
+  npm install mocha-tesults-reporter --save       
+```
+
+## Test dosyalarını terminal üzerinden çalıştırma
+```bash
+      npx mocha ./test/localTest/example.js --reporter mochawesome    
+
+  veya 
+
+      npm run test

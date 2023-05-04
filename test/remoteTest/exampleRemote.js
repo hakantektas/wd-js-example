@@ -1,6 +1,7 @@
 require("../../helpers/setup");
 const {DATA} = require('../test-settings.js');
 const wd = require("wd");
+require("mocha-allure-reporter");
 
 const serverConfigRemete = {
     hostname: DATA.CLOUD['momentum.hostname'],
@@ -13,6 +14,17 @@ describe("sample test", function () {
 
     let driver;
     let allPassed = true;
+
+
+    const testStep = allure.createStep("initial", () => {
+        // do something
+      });
+      // If step will throw an exception or return a rejected promise, it will be marked as broken
+      // in the report, and also  will fail the test
+    const stepToBreak = allure.createStep("break test", () => {
+    throw new Error("Make test broken");
+    });
+
 
     before(function () {
         
@@ -50,6 +62,8 @@ describe("sample test", function () {
     });
 
     it("login example", function () {
+        testStep()
+        stepToBreak()
         return driver
             .elementById("app.com.sandjs.bankaccountfakewallet:id/username_txt")
             .should.eventually.exist
@@ -62,6 +76,7 @@ describe("sample test", function () {
             .hideKeyboard()
             .elementById("app.com.sandjs.bankaccountfakewallet:id/login_btn")
             .click()
+            
 
     });
 });

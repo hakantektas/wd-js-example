@@ -1,6 +1,7 @@
 require("../../helpers/setup");
 const {DATA} = require('../test-settings.js');
 const wd = require("wd");
+const tesultsReporter = require("mocha-tesults-reporter")
 
 const serverConfigLocal = {
     host: 'localhost',
