@@ -13,8 +13,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "allure-commandline": "^2.22.0",
     "chai-as-promised": "^7.1.1",
     "colors": "^1.4.0",
+    "mocha-allure-reporter": "^1.4.0",
     "wd": "^1.14.0"
   },
   "devDependencies": {
