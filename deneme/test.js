@@ -62,7 +62,7 @@ describe("sample test", function () {
     let allPassed = true;
 
     before(function () {
-        driver = wd.promiseChainRemote(serverConfigLocal);
+        driver = wd.promiseChainRemote(serverConfigRemete);
         require("../helpers/logging").configure(driver);
 
         setDriverMethods(driver);
