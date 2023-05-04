@@ -7,11 +7,11 @@
     "test": "test"
   },
   "scripts": {
-    "test": "npx mocha ./example/localTest/example.js --reporter mochawesome",
-    "test2": "npx mocha ./example/remoteTest/exampleRemote.js --reporter mochawesome",
-    "test3": "mocha ./example/localTest/example.js && multi='progress=- mocha-allure-reporter=-' mocha",
+    "test": "npx mocha ./test/localTest/example.js --reporter mochawesome",
+    "test2": "npx mocha ./test/remoteTest/exampleRemote.js --reporter mochawesome",
+    "test3": "mocha ./test/localTest/example.js && multi='progress=- mocha-allure-reporter=-' mocha",
     "report": "allure generate allure-results --clean -o allure-report && allure open allure-report",
-    "test4": "mocha /Users/hakantektas/Desktop/wd-js-example/wd-js-example/deneme/deneme.js"
+    "test4": "npx mocha ./deneme/test.js"
   },
   "author": "",
   "license": "ISC",

@@ -41,7 +41,7 @@ describe("sample test", function () {
 
     it("login example", function () {
         return driver
-            .elementById("app.com.sandjs.bankaccountfakewallet:id/username_txt")
+            .waitForElementById("app.com.sandjs.bankaccountfakewallet:id/username_txt")
             .should.eventually.exist
             .click()
             .elementById("app.com.sandjs.bankaccountfakewallet:id/username_txt")

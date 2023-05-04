@@ -39,6 +39,7 @@ describe('Case_15746', function () {
 
 
 require("../helpers/setup");
+const {DATA} = require('../test/test-settings.js');
 const wd = require("wd");
 
 
@@ -60,7 +61,7 @@ var ELEMENT = {
 exports.setDriverMethods = (driver) => {
     
     wd.addPromiseChainMethod('login',(user,pass) => {
-        return driver
+    return driver
         .waitForElementById(ELEMENT.USERNAME_TXT, DEFAULT_TIMEOUT)
         .sendKeys(user)
         .sleep(DEFAULT_TIMEOUT_MIN)
