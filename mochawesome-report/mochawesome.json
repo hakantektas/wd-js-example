@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2023-05-04T07:52:59.657Z",
-    "end": "2023-05-04T07:53:12.122Z",
-    "duration": 12465,
+    "start": "2023-05-04T10:37:13.340Z",
+    "end": "2023-05-04T10:37:28.087Z",
+    "duration": 14747,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,25 +18,25 @@
   },
   "results": [
     {
-      "uuid": "1b8085f0-97e2-40f6-903f-91d2b3e59e03",
+      "uuid": "f4965554-296f-4b5f-a5d9-392b0332f8c9",
       "title": "",
-      "fullFile": "/Users/hakantektas/Desktop/wd-js-example/wd-js-example/test/localTest/example.js",
-      "file": "/test/localTest/example.js",
+      "fullFile": "/Users/hakantektas/Desktop/wd-js-example/wd-js-example/example/localTest/example.js",
+      "file": "/example/localTest/example.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "bc86109a-f8cd-4ba2-900f-3db23fa7bc84",
+          "uuid": "4f6ac870-a84f-483c-b81a-7472c8a13793",
           "title": "sample test",
-          "fullFile": "/Users/hakantektas/Desktop/wd-js-example/wd-js-example/test/localTest/example.js",
-          "file": "/test/localTest/example.js",
+          "fullFile": "/Users/hakantektas/Desktop/wd-js-example/wd-js-example/example/localTest/example.js",
+          "file": "/example/localTest/example.js",
           "beforeHooks": [
             {
               "title": "\"before all\" hook in \"sample test\"",
               "fullTitle": "sample test \"before all\" hook in \"sample test\"",
               "timedOut": false,
-              "duration": 7138,
+              "duration": 9770,
               "state": null,
               "speed": null,
               "pass": false,
@@ -45,8 +45,8 @@
               "context": null,
               "code": "driver = wd.promiseChainRemote(serverConfigLocal);\nrequire(\"../../helpers/logging\").configure(driver);\nlet desired = {\n    platformName: 'Android',\n    deviceName: '988d9145524846413130',\n    app:\"/Users/hakantektas/Desktop/wd-js-example/wd-js-example/app/sample.apk\",\n    fullReset: false,\n    noReset: true\n};\nreturn driver\n    .init(desired)\n    .setImplicitWaitTimeout(8000);",
               "err": {},
-              "uuid": "7b29081c-663b-4260-9e75-39c1b7630d4d",
-              "parentUUID": "bc86109a-f8cd-4ba2-900f-3db23fa7bc84",
+              "uuid": "458814b4-c2c9-400c-94f3-3cdf82f921e3",
+              "parentUUID": "4f6ac870-a84f-483c-b81a-7472c8a13793",
               "isHook": true,
               "skipped": false
             }
@@ -56,7 +56,7 @@
               "title": "\"after all\" hook in \"sample test\"",
               "fullTitle": "sample test \"after all\" hook in \"sample test\"",
               "timedOut": false,
-              "duration": 342,
+              "duration": 268,
               "state": null,
               "speed": null,
               "pass": false,
@@ -65,8 +65,8 @@
               "context": null,
               "code": "return driver\n    .quit();",
               "err": {},
-              "uuid": "852048ea-7183-46ef-ac7f-f6f36a67dbd9",
-              "parentUUID": "bc86109a-f8cd-4ba2-900f-3db23fa7bc84",
+              "uuid": "19d215d2-d765-4fc7-861a-17dfee0e0e63",
+              "parentUUID": "4f6ac870-a84f-483c-b81a-7472c8a13793",
               "isHook": true,
               "skipped": false
             },
@@ -83,8 +83,8 @@
               "context": null,
               "code": "allPassed = allPassed && this.currentTest.state === 'passed';",
               "err": {},
-              "uuid": "0e595ea8-0b63-40da-95fb-06e4cf78f6f3",
-              "parentUUID": "bc86109a-f8cd-4ba2-900f-3db23fa7bc84",
+              "uuid": "ee1220af-10b9-4c86-b42f-f6e3eeb189eb",
+              "parentUUID": "4f6ac870-a84f-483c-b81a-7472c8a13793",
               "isHook": true,
               "skipped": false
             }
@@ -94,7 +94,7 @@
               "title": "login example",
               "fullTitle": "sample test login example",
               "timedOut": false,
-              "duration": 4980,
+              "duration": 4705,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -103,20 +103,20 @@
               "context": null,
               "code": "return driver\n    .elementById(\"app.com.sandjs.bankaccountfakewallet:id/username_txt\")\n    .should.eventually.exist\n    .click()\n    .elementById(\"app.com.sandjs.bankaccountfakewallet:id/username_txt\")\n    .sendKeys(\"hakana\")\n    .hideKeyboard()\n    .elementById(\"app.com.sandjs.bankaccountfakewallet:id/password_txt\")\n    .sendKeys(\"123456Aa.\")\n    .hideKeyboard()\n    .elementById(\"app.com.sandjs.bankaccountfakewallet:id/login_btn\")\n    .click()",
               "err": {},
-              "uuid": "6a935453-f210-47e0-9f3a-e4331d85c779",
-              "parentUUID": "bc86109a-f8cd-4ba2-900f-3db23fa7bc84",
+              "uuid": "c7d5a05c-a79c-40e0-9ce5-a7483575a41f",
+              "parentUUID": "4f6ac870-a84f-483c-b81a-7472c8a13793",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "6a935453-f210-47e0-9f3a-e4331d85c779"
+            "c7d5a05c-a79c-40e0-9ce5-a7483575a41f"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 4980,
+          "duration": 4705,
           "root": false,
           "rootEmpty": false,
           "_timeout": 300000
